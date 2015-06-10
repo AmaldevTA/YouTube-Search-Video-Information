@@ -1,0 +1,35 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" >
+
+        <EditText
+            android:id="@+id/editText_searchKeyWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="85" >
+
+        <ListView
+            android:id="@+id/listView_youTubeResults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+   
+    </TableRow>
+
+</TableLayout>
